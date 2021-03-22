@@ -1,0 +1,23 @@
+[
+{
+  "model": "useraccounts.student",
+  "pk": 1,
+  "fields": {
+    "user_id": 2,
+    "groups": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "useraccounts.student",
+  "pk": 2,
+  "fields": {
+    "user_id": 1,
+    "groups": [
+      1
+    ]
+  }
+}
+]

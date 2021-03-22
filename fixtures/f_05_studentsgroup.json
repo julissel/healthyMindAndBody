@@ -1,0 +1,32 @@
+[
+{
+  "model": "useraccounts.studentsgroup",
+  "pk": 1,
+  "fields": {
+    "name": "2021-03-1-PYTHON",
+    "entry_date": "2021-03-01",
+    "graduation_date": "2021-05-31",
+    "course": 1
+  }
+},
+{
+  "model": "useraccounts.studentsgroup",
+  "pk": 2,
+  "fields": {
+    "name": "2021-03-1-YOGA",
+    "entry_date": "2021-03-10",
+    "graduation_date": "2021-04-29",
+    "course": 5
+  }
+},
+{
+  "model": "useraccounts.studentsgroup",
+  "pk": 3,
+  "fields": {
+    "name": "2021-03-1-Art",
+    "entry_date": "2021-03-31",
+    "graduation_date": "2021-04-30",
+    "course": 3
+  }
+}
+]

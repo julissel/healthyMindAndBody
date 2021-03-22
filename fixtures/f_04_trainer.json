@@ -1,0 +1,18 @@
+[
+{
+  "model": "useraccounts.trainer",
+  "pk": 1,
+  "fields": {
+    "user_id": 3,
+    "is_main_mentor": true
+  }
+},
+{
+  "model": "useraccounts.trainer",
+  "pk": 2,
+  "fields": {
+    "user_id": 4,
+    "is_main_mentor": true
+  }
+}
+]

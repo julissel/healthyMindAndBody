@@ -1,0 +1,62 @@
+[
+{
+  "model": "programs.course",
+  "pk": 1,
+  "fields": {
+    "name": "PYTHON",
+    "description": "Python for kids and beginners. Python! Python!!! Python-Python!!! Python123456789101112!",
+    "last_changed": "2021-03-22T17:55:04.593Z",
+    "created": "2021-03-22T17:55:04.593Z",
+    "status": "w",
+    "category": 3
+  }
+},
+{
+  "model": "programs.course",
+  "pk": 2,
+  "fields": {
+    "name": "Java",
+    "description": "Java for kids and teenagers!",
+    "last_changed": "2021-03-22T17:55:49.604Z",
+    "created": "2021-03-22T17:55:49.604Z",
+    "status": "d",
+    "category": 3
+  }
+},
+{
+  "model": "programs.course",
+  "pk": 3,
+  "fields": {
+    "name": "Art classes",
+    "description": "Art classes for children and their parents.",
+    "last_changed": "2021-03-22T17:57:02.688Z",
+    "created": "2021-03-22T17:57:02.688Z",
+    "status": "w",
+    "category": 5
+  }
+},
+{
+  "model": "programs.course",
+  "pk": 4,
+  "fields": {
+    "name": "Chess for beginners",
+    "description": "Chess for beginners.",
+    "last_changed": "2021-03-22T17:57:46.588Z",
+    "created": "2021-03-22T17:57:46.588Z",
+    "status": "a",
+    "category": 4
+  }
+},
+{
+  "model": "programs.course",
+  "pk": 5,
+  "fields": {
+    "name": "YOGA",
+    "description": "Yoga-yoga!",
+    "last_changed": "2021-03-22T17:58:19.057Z",
+    "created": "2021-03-22T17:58:19.057Z",
+    "status": "w",
+    "category": 2
+  }
+}
+]

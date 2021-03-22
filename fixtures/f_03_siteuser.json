@@ -1,0 +1,54 @@
+[
+{
+  "model": "useraccounts.siteuser",
+  "pk": 1,
+  "fields": {
+    "name": "Viktor",
+    "first_name": "Viktor",
+    "last_name": "Vernik",
+    "email": "vv@m.com",
+    "date_registration": "2021-03-22T17:59:23.177Z",
+    "location": "rus",
+    "birth_date": "2008-01-07"
+  }
+},
+{
+  "model": "useraccounts.siteuser",
+  "pk": 2,
+  "fields": {
+    "name": "Viktoria_01",
+    "first_name": "Viktoria",
+    "last_name": "Senina",
+    "email": "vs@mail.com",
+    "date_registration": "2021-03-22T18:00:10.660Z",
+    "location": "rus",
+    "birth_date": "2012-01-09"
+  }
+},
+{
+  "model": "useraccounts.siteuser",
+  "pk": 3,
+  "fields": {
+    "name": "teacher1",
+    "first_name": "Andrey",
+    "last_name": "Andreev",
+    "email": "aa@teacher.com",
+    "date_registration": "2021-03-22T18:00:51.552Z",
+    "location": "rus",
+    "birth_date": "1982-11-11"
+  }
+},
+{
+  "model": "useraccounts.siteuser",
+  "pk": 4,
+  "fields": {
+    "name": "teacher2",
+    "first_name": "Anna",
+    "last_name": "Anina",
+    "email": "aan@m.com",
+    "date_registration": "2021-03-22T18:01:36.634Z",
+    "location": "rus",
+    "birth_date": "1987-05-02"
+  }
+}
+]
