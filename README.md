@@ -83,7 +83,7 @@
    
  - заполнить базу данных:
    
-   *python3 manage.py loaddata fixtures/*.json*
+   *python3 manage.py loaddata fixtures/***.json*
    
  - запустить сервер и перейти в браузер по ссылке:
    
