@@ -3,8 +3,7 @@ from django.template.defaultfilters import truncatechars
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=50, unique=True, blank=False, verbose_name="Category",
-                            help_text="enter category name")
+    name = models.CharField(max_length=50, unique=True, verbose_name="Category", help_text="enter category name")
 
     def __str__(self):
         return f"{self.name}"
@@ -24,13 +23,12 @@ class Course(models.Model):
         (WORKS, 'course is working'),
         (ARCHIVED, 'course is in the archive'),
         )
-    name = models.CharField(max_length=100, blank=False, verbose_name="Course", help_text="add the name")
+    name = models.CharField(max_length=100, verbose_name="Course", help_text="add the name")
     description = models.TextField(blank=True, verbose_name="Course description",
                                    help_text="add some description")
     last_changed = models.DateTimeField(auto_now=True, verbose_name="Date of change")
     created = models.DateTimeField(auto_now_add=True, verbose_name="Date of creation")
-    status = models.CharField(max_length=1, choices=STATUSES, default=DRAFT, blank=False,
-                              verbose_name="Status")
+    status = models.CharField(max_length=1, choices=STATUSES, default=DRAFT, verbose_name="Status")
 
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
