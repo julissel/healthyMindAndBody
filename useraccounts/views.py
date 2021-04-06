@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from django.views.generic import ListView, DetailView
+from useraccounts.models import StudentsGroup, Student
 
-# Create your views here.
+
+class StudentsGroup(ListView):
+    model = StudentsGroup
+
+
+class Student(DetailView):
+    model = Student

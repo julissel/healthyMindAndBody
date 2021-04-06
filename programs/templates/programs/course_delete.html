@@ -1,0 +1,19 @@
+{% extends 'programs/base.html' %}
+
+ {% block title %}
+     <title>Удаление курса</title>
+ {% endblock title %}
+
+{% block content %}
+<h1>Удаление курса '{{ course.name }}'</h1>
+
+    <p><strong>Описание курса:</strong></p>
+    <p>{{ course.description }}</p>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Удалить курс">
+</form>
+
+{% endblock %}

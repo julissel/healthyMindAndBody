@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from django.views.generic import ListView
+from programsschedule.models import Schedule
 
-# Create your views here.
+
+class Schedule(ListView):
+    model = Schedule

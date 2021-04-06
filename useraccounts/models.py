@@ -33,4 +33,9 @@ class Trainer(models.Model):
 
 class Student(models.Model):
     user_id = models.OneToOneField(SiteUser, on_delete=models.PROTECT)
-    groups = models.ManyToManyField(StudentsGroup)
+    groups = models.ManyToManyField(StudentsGroup, through='GroupStudentRelation')
+
+
+class GroupStudentRelation(models.Model):
+    group = models.ForeignKey(StudentsGroup, on_delete=models.PROTECT)
+    student = models.ForeignKey(Student, on_delete=models.PROTECT)

@@ -1,0 +1,13 @@
+{% extends 'useraccounts/base.html' %}
+
+{% block title %}
+    <title>
+        {{ page_name|capfirst|default:"Страница студента:" }}
+    </title>
+{% endblock title %}
+
+{% block content %}
+    <h3>Студент: {{ student.user_id.last_name }} {{student.user_id.first_name }}</h3>
+    <p>Дата регистрации: {{ student.user_id.date_registration }}</p>
+    <p>Местоположение: {{ student.user_id.location }}</p>
+{% endblock%}

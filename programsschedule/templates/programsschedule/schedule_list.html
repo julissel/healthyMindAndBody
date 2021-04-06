@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_name|capfirst|default:"Расписание" }}</title>
+</head>
+<body>
+<h1>Расписание занятий:</h1>
+<ul>
+{% for item in object_list %}
+    <h3>{{ forloop.counter }} . Группа '{{ item.group }}'</h3>
+    <h4><a href="{% url 'programs:course' pk=item.group.course.pk %}">Курс - {{ item.group.course }} </a></h4>
+    <p>Продолжительность занятия: ({{ item.start_at }} - {{ item.end_till }})</p>
+    <p>Описание: {{ item.description }}</p>
+{% endfor %}
+</ul>
+</body>
+</html>

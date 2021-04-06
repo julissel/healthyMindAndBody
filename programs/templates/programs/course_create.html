@@ -1,0 +1,16 @@
+{% extends 'programs/base.html' %}
+
+ {% block title %}
+     <title>Новый курс</title>
+ {% endblock title %}
+
+{% block content %}
+<h1>Добавление нового курса:</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Добавить новый курс">
+</form>
+
+{% endblock %}

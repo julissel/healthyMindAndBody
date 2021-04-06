@@ -1,0 +1,21 @@
+{% extends 'programs/base.html' %}
+
+{% block content %}
+    <h1>Курс: {{ course.name }}</h1>
+    <ul>
+        <p><strong>Категория: </strong></p>
+        <p> {{ course.category }}</p>
+
+        <p><strong>Статус курса: </strong></p>
+        <p>{{ course.get_status_display }}</p>
+
+        <p><strong>Описание курса:</strong></p>
+        <p>{{ course.description }}</p>
+    </ul>
+    <p>
+        <a href="{% url 'programs:update' pk=course.pk %}">Редактировать курс</a>
+    </p>
+    <p>
+        <a href="{% url 'programs:delete' pk=course.pk %}">Удалить курс</a>
+    </p>
+{% endblock %}

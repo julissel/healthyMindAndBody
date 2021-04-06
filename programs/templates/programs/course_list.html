@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_name|capfirst|default:"Наши курсы" }}</title>
+</head>
+<body>
+<a href="{% url 'programs:addcourse' %}">Создать новый курс</a>
+<h1>Список курсов по категориям:</h1>
+<ul>
+{% for course in object_list %}
+    <a href="{% url 'programs:course' pk=course.pk %}">
+    <h3>{{ forloop.counter }} . {{ course.name }}</h3>
+    </a>
+    <p>{{ course.category }} ({{ course.last_changed|date:"D d M y" }})</p>
+{% endfor %}
+</ul>
+</body>
+</html>

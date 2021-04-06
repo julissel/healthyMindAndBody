@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_name|capfirst|default:"Наши группы" }}</title>
+</head>
+<body>
+<h1>Список групп:</h1>
+<ul>
+{% for group in object_list %}
+    <h3>{{ forloop.counter }} . {{ group.name }}</h3>
+    <h4><a href="{% url 'programs:course' pk=group.course.pk %}">Курс - {{ group.course }} </a></h4>
+    <p>Период обучения: ({{ group.entry_date|date:"D d M y" }} - {{ group.graduation_date|date:"D d M y" }})</p>
+{% endfor %}
+</ul>
+</body>
+</html>
